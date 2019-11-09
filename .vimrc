@@ -48,6 +48,8 @@ set nowritebackup
 nmap gt :YcmCompleter GoTo <CR>
 nmap gtr :YcmCompleter GoToReferences <CR>
 nmap <C-b> :NERDTreeToggle <CR>
+nnoremap <C-Right> <C-w>w                                                                      
+
 
 "mappings
 nmap <C-s> :Prettier<CR> :w<CR>
