@@ -20,6 +20,9 @@ call plug#end()
 
 set encoding=utf-8
 
+set wildignore+=*/node_modules/*,*/dist/*,*/__pycache__/*,*/distribution/*
+
+
 inoremap jk <ESC>
 
 colorscheme gruvbox
@@ -216,42 +219,19 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 set t_Co=256
 set t_ut=
-
-
-
-"let g:python_host_prog  = '/usr/bin/python3'
-
-
-""set renderoptions=type:directx,gamma:1.5,contrast:0.5,geom:1,renmode:5,taamode:1,level:0.5
-"set wildignore+=*/node_modules/*,*/dist/*,*/__pycache__/*,*/distribution/*
 set nocompatible
 set cursorline
-"set number
-"set textwidth=120
-
 set expandtab
 set softtabstop=2
 set shiftwidth=2
 set tabstop=2
-
-
-"" coc install
 set cmdheight=2
-"set updatetime=100
 set nobackup
 set nowritebackup
-
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 
 ""mappings
 nmap <C-s> :PrettierAsync <CR> :w<CR>
-map <S-tab> :tabn <CR>
-"nmap gt :YcmCompleter GoTo <CR>
-"nmap gtr :YcmCompleter GoToReferences <CR>
-"nmap <C-b> :NERDTreeToggle <CR>
-"map <C-Left> <C-w>w <CR>
 
 
 ""NERD comments
@@ -262,4 +242,3 @@ let NERDTreeShowHidden=1
 let g:airline_powerline_fonts = 1 "Включить поддержку Powerline шрифтов
 let g:airline_section_z = "\ue0a1:%l/%L Col:%c" "Кастомная графа положения курсора
 let g:Powerline_symbols='unicode' "Поддержка unicode
-
